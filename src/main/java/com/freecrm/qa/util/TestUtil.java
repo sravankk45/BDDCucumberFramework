@@ -1,4 +1,4 @@
-package com.crm.qa.util;
+package com.freecrm.qa.util;
 
 public class TestUtil {
 

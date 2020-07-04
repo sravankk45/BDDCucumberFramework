@@ -12,74 +12,98 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 9737706200,
+              "status": "passed"
             },
             "line": 4,
             "name": "user is on the home page",
-            "match": {},
+            "match": {
+              "location": "LoginStepDefinition.userOnHomePage()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 19045500,
+              "status": "passed"
             },
             "line": 5,
             "name": "title of the home page is Free CRM",
-            "match": {},
+            "match": {
+              "location": "LoginStepDefinition.verifyHomePageTitle()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 4355040300,
+              "status": "passed"
             },
             "line": 6,
             "name": "user click on login button",
-            "match": {},
+            "match": {
+              "location": "LoginStepDefinition.clickLoginButton()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 5882300,
+              "status": "passed"
             },
             "line": 7,
             "name": "user is on login page",
-            "match": {},
+            "match": {
+              "location": "LoginStepDefinition.verifyLoginPageTitle()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 598468200,
+              "status": "passed"
             },
             "line": 8,
             "name": "user enters email and password",
-            "match": {},
+            "match": {
+              "location": "LoginStepDefinition.enterEmailPwd()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 93867600,
+              "status": "passed"
             },
             "line": 9,
             "name": "user clicks on submit button",
-            "match": {},
+            "match": {
+              "location": "LoginStepDefinition.clickSubmitButton()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2115063300,
+              "status": "passed"
             },
             "line": 10,
             "name": "user is able to login to his account",
-            "match": {},
+            "match": {
+              "location": "LoginStepDefinition.verifyLogin()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 758845700,
+              "status": "passed"
             },
             "line": 11,
             "name": "close the browser",
-            "match": {},
+            "match": {
+              "location": "LoginStepDefinition.closeBrowser()"
+            },
             "keyword": "Then "
           }
         ]
@@ -89,6 +113,6 @@
     "description": "",
     "id": "free-crm-login-feature",
     "keyword": "Feature",
-    "uri": "login.feature"
+    "uri": "src/main/java/com/freecrm/qa/features/login.feature"
   }
 ]

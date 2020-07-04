@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/com/freecrm/qa/features/login.feature");
 formatter.feature({
   "line": 1,
   "name": "Free CRM Login Feature",
@@ -54,36 +54,60 @@ formatter.step({
   "name": "close the browser",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "LoginStepDefinition.userOnHomePage()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 9737706200,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "LoginStepDefinition.verifyHomePageTitle()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 19045500,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "LoginStepDefinition.clickLoginButton()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 4355040300,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "LoginStepDefinition.verifyLoginPageTitle()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 5882300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefinition.enterEmailPwd()"
+});
+formatter.result({
+  "duration": 598468200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefinition.clickSubmitButton()"
+});
+formatter.result({
+  "duration": 93867600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefinition.verifyLogin()"
+});
+formatter.result({
+  "duration": 2115063300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStepDefinition.closeBrowser()"
+});
+formatter.result({
+  "duration": 758845700,
+  "status": "passed"
 });
 });

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="17.683919">
-<testcase classname="Free CRM Login Feature" name="Login for Free CRM" time="17.683919">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="30.827728">
+<testcase classname="Free CRM Login Feature" name="Login for Free CRM with valid credentials" time="15.762908">
 <system-out><![CDATA[Given user is on the home page..............................................passed
 When title of the home page is Free CRM.....................................passed
 Then user click on login button.............................................passed
@@ -8,6 +8,17 @@ Then user is on login page..................................................pass
 Then user enters email and password.........................................passed
 Then user clicks on submit button...........................................passed
 Then user is able to login to his account...................................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Login Feature" name="Login for Free CRM with invalid credentials" time="15.06482">
+<system-out><![CDATA[Given user is on the home page..............................................passed
+When title of the home page is Free CRM.....................................passed
+Then user click on login button.............................................passed
+Then user is on login page..................................................passed
+Then user enters invalid email and password.................................passed
+Then user clicks on submit button...........................................passed
+Then user gets invalid login message........................................passed
 Then close the browser......................................................passed
 ]]></system-out>
 </testcase>

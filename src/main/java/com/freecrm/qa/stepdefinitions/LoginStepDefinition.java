@@ -56,6 +56,16 @@ public class LoginStepDefinition extends BaseTest{
 		 
 	 }
 	 
+	 @Then("^user enters invalid email and password$")
+	 public void enterInvEmailPwd(){
+		 
+		 WebDriverWait wait=new WebDriverWait(driver,10);
+		 wait.until(ExpectedConditions.elementToBeClickable(By.name("email")));
+		 driver.findElement(By.name("email")).sendKeys(userName);
+		 driver.findElement(By.name("password")).sendKeys(invPassword);
+		 
+	 }
+	 
 	 @Then("^user clicks on submit button$")
 	 public void clickSubmitButton(){ 
 		 WebElement loginBtn = driver.findElement(By.xpath("//div[@class='ui fluid large blue submit button']"));
@@ -71,6 +81,16 @@ public class LoginStepDefinition extends BaseTest{
 		 Assert.assertEquals("Sravan Kumar", userDisplayName);
 
 	 }
+	 
+	 @Then("^user gets invalid login message$")
+	 public void verifyInvLogin(){
+		 
+		 WebElement messageElement=driver.findElement(By.xpath("//p[contains(text(),'Invalid login')]"));
+		 String displayMessage = messageElement.getText();
+		 Assert.assertEquals("Invalid login", displayMessage);
+
+	 }
+	 
 	 
 	 @Then("^close the browser$")
 	 public void closeBrowser(){

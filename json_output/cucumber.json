@@ -3,19 +3,19 @@
     "line": 1,
     "elements": [
       {
-        "line": 2,
-        "name": "Login for Free CRM",
+        "line": 3,
+        "name": "Login for Free CRM with valid credentials",
         "description": "",
-        "id": "free-crm-login-feature;login-for-free-crm",
+        "id": "free-crm-login-feature;login-for-free-crm-with-valid-credentials",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 9737706200,
+              "duration": 9994796000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "user is on the home page",
             "match": {
               "location": "LoginStepDefinition.userOnHomePage()"
@@ -24,10 +24,10 @@
           },
           {
             "result": {
-              "duration": 19045500,
+              "duration": 14445000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "title of the home page is Free CRM",
             "match": {
               "location": "LoginStepDefinition.verifyHomePageTitle()"
@@ -36,10 +36,10 @@
           },
           {
             "result": {
-              "duration": 4355040300,
+              "duration": 2877460100,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "user click on login button",
             "match": {
               "location": "LoginStepDefinition.clickLoginButton()"
@@ -48,10 +48,10 @@
           },
           {
             "result": {
-              "duration": 5882300,
+              "duration": 6375600,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "user is on login page",
             "match": {
               "location": "LoginStepDefinition.verifyLoginPageTitle()"
@@ -60,10 +60,10 @@
           },
           {
             "result": {
-              "duration": 598468200,
+              "duration": 551717600,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "user enters email and password",
             "match": {
               "location": "LoginStepDefinition.enterEmailPwd()"
@@ -72,10 +72,10 @@
           },
           {
             "result": {
-              "duration": 93867600,
+              "duration": 78583300,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "user clicks on submit button",
             "match": {
               "location": "LoginStepDefinition.clickSubmitButton()"
@@ -84,10 +84,10 @@
           },
           {
             "result": {
-              "duration": 2115063300,
+              "duration": 1499544100,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "user is able to login to his account",
             "match": {
               "location": "LoginStepDefinition.verifyLogin()"
@@ -96,10 +96,116 @@
           },
           {
             "result": {
-              "duration": 758845700,
+              "duration": 739986000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
+            "name": "close the browser",
+            "match": {
+              "location": "LoginStepDefinition.closeBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Login for Free CRM with invalid credentials",
+        "description": "",
+        "id": "free-crm-login-feature;login-for-free-crm-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8994618700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user is on the home page",
+            "match": {
+              "location": "LoginStepDefinition.userOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 105736000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "title of the home page is Free CRM",
+            "match": {
+              "location": "LoginStepDefinition.verifyHomePageTitle()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 944108400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click on login button",
+            "match": {
+              "location": "LoginStepDefinition.clickLoginButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16873100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user is on login page",
+            "match": {
+              "location": "LoginStepDefinition.verifyLoginPageTitle()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2791206900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user enters invalid email and password",
+            "match": {
+              "location": "LoginStepDefinition.enterInvEmailPwd()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 75236100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user clicks on submit button",
+            "match": {
+              "location": "LoginStepDefinition.clickSubmitButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1395394000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user gets invalid login message",
+            "match": {
+              "location": "LoginStepDefinition.verifyInvLogin()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 741647300,
+              "status": "passed"
+            },
+            "line": 23,
             "name": "close the browser",
             "match": {
               "location": "LoginStepDefinition.closeBrowser()"

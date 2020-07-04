@@ -20,11 +20,12 @@ public class BaseTest {
 	protected String url;
 	protected String userName;
 	protected String password;
+	protected String invPassword;
 	
 	public BaseTest(){
 		 try {
 				prop = new Properties();
-				FileInputStream ip = new FileInputStream(curDir+ "/src/main/java/com/crm"
+				FileInputStream ip = new FileInputStream(curDir+ "/src/main/java/com/freecrm"
 						+ "/qa/config/config.properties");
 				prop.load(ip);
 			}
@@ -45,6 +46,7 @@ public class BaseTest {
 		 	url=prop.getProperty("url");
 		 	userName=prop.getProperty("username");
 		 	password=prop.getProperty("password");
+		 	invPassword=prop.getProperty("invpassword");
 		 	
 			if(browserName.equals("chrome")){
 				
